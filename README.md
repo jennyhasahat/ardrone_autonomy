@@ -64,7 +64,7 @@ The installation follows the same steps needed usually to compile a ROS driver.
         $ cd ~/ros/src
         $ git clone git://github.com/jennyhasahat/ardrone_autonomy.git 
         ```
-#https://github.com/AutonomyLab/ardrone_autonomy.git
+<!--https://github.com/AutonomyLab/ardrone_autonomy.git-->
 
 **NOTE (For advanced users):** Instead of the `master` branch you can use the `dev-unstable` branch for the latest _unstable_ code which may contain bug fixes or new features. This is the branch that all developments happen on. Please use this branch to submit pull requests.
  
