@@ -58,14 +58,13 @@ This driver has been tested on Linux machines running Ubuntu 11.10, 12.04 & 12.1
 
 The installation follows the same steps needed usually to compile a ROS driver.
 
-* Get the code: Clone (or download and unpack) the driver to your personal ROS stacks folder (e.g. ~/ros/stacks) and `cd` to it. Please make sure that this folder is in your `ROS_PACKAGE_PATH` environmental variable.
+* Get the code: Clone (or download and unpack) the driver to your personal ROS workspace src folder (e.g. ~/ros/src) and `cd` to it. Please make sure that this folder is in your `ROS_PACKAGE_PATH` environmental variable.
 
         ```bash
-        $ cd ~/ros/stacks
-        $ git clone https://github.com/AutonomyLab/ardrone_autonomy.git
-        $ rosstack profile && rospack profile
-        $ roscd ardrone_autonomy
+        $ cd ~/ros/src
+        $ git clone git://github.com/jennyhasahat/ardrone_autonomy.git 
         ```
+#https://github.com/AutonomyLab/ardrone_autonomy.git
 
 **NOTE (For advanced users):** Instead of the `master` branch you can use the `dev-unstable` branch for the latest _unstable_ code which may contain bug fixes or new features. This is the branch that all developments happen on. Please use this branch to submit pull requests.
  
@@ -81,7 +80,7 @@ The installation follows the same steps needed usually to compile a ROS driver.
         libavfilter.a  libpc_ardrone.a  libswscale.a
         ```
 
-* Compile the driver: You can easily compile the driver by using `rosmake ardrone_autonomy` command.
+* Compile the driver: You can easily compile the driver by using `catkin_make` command from the top level folder of your ROS workspace (e.g. ~/ros)
 
 ## How to Run
 
