@@ -131,14 +131,14 @@ typedef enum
 typedef enum
 {
   TAG_TYPE_NONE             = 0,
-  TAG_TYPE_SHELL_TAG        ,
-  TAG_TYPE_ROUNDEL          ,
-  TAG_TYPE_ORIENTED_ROUNDEL ,
-  TAG_TYPE_STRIPE           ,
-  TAG_TYPE_CAP              ,
-  TAG_TYPE_SHELL_TAG_V2     ,
-  TAG_TYPE_TOWER_SIDE       ,
-  TAG_TYPE_BLACK_ROUNDEL    ,
+  TAG_TYPE_SHELL_TAG        , //1
+  TAG_TYPE_ROUNDEL          , //2
+  TAG_TYPE_ORIENTED_ROUNDEL , //3
+  TAG_TYPE_STRIPE           , //4
+  TAG_TYPE_CAP              , //5
+  TAG_TYPE_SHELL_TAG_V2     , //6
+  TAG_TYPE_TOWER_SIDE       , //7
+  TAG_TYPE_BLACK_ROUNDEL    , //8
   TAG_TYPE_NUM
 } TAG_TYPE;
 

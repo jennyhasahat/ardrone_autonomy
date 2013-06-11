@@ -87,7 +87,12 @@ C_RESULT vp_com_open_socket(vp_com_socket_t* sck, Read* read, Write* write)
       name.sin_addr.s_addr  = INADDR_ANY;
 
       if ( bind( s, (struct sockaddr*)&name, sizeof(struct sockaddr)) < 0 )
-        res = VP_COM_ERROR;
+      {
+    	//this is a fix from https://github.com/AutonomyLab/ardrone_autonomy/issues/56
+    	//which allows the ArdroneDriver to connect to more than one drone.
+        //res = VP_COM_ERROR;
+    	  res = VP_COM_OK;
+      }
 
       if ( sck->is_multicast == 1 )
       {
